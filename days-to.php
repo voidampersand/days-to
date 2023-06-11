@@ -1,8 +1,9 @@
 <?php
 /*
  * Plugin Name:       Days To
- * Plugin URI:        https://github.com/voidampersand/days_to
+ * Plugin URI:        https://github.com/voidampersand/days-to
  * Description:       The simplest possible plugin to compute the days to a specified date.
+ * Example:           [days-to date='2023-07-20T08:00:00-05']
  * Version:           1.0
  * Author:            voidampersand
  * License:           GPL v2 or later
@@ -18,7 +19,7 @@ function voidampersand_days_to_shortcode($atts) {
 }
 
 function voidampersand_days_to_init() {
-	add_shortcode('days_to', 'voidampersand_days_to_shortcode');
+	add_shortcode('days-to', 'voidampersand_days_to_shortcode');
 }
 
 add_action('init', 'voidampersand_days_to_init');
